@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="detail-product">
+      <div class="detail-product-img">
+        <img src="./picture/product/product1.png" alt="Detail-product" />
+      </div>
+      <div class="detail-product-description">
+        <div class="detail-product-description-title">
+          <h2 class="product-description-title">
+            Short Sleeve T-shirt with letters and bow Sweet Girl - Wise Tee
+          </h2>
+          <p class="product-description-price">$265.0</p>
+          <p class="product-description-intro">
+            Sweet Girl Flower Tee is a short-sleeved T-shirt with a vibrant
+            floral pattern, bringing a gentle and feminine beauty to girls. The
+            shirt is designed to suit many different styles, from stylish to
+            casual.
+          </p>
+        </div>
+        <div class="detail-product-color">
+          <label class="color-product-label">COLOR:</label>
+          <label class="radio-color-product">
+            <input
+              type="radio"
+              name="option-color-product"
+              value="option-color-product1"
+            />
+            <span>Black</span>
+          </label>
+        </div>
+        <div class="product-quantity">
+          <label class="quantity-product-label">QUANTITY:</label>
+          <button class="quantity-btn" id="decrease">-</button>
+          <input
+            type="text"
+            id="quantity"
+            name="quantity"
+            value="1"
+            class="quantity-input"
+            readonly
+          />
+          <button class="quantity-btn" id="increase">+</button>
+        </div>
+        <div class="button-add-cart-buy-product">
+          <button class="add-product-to-cart" type="button">ADD TO CART</button>
+          <button class="buy-product-now" type="button">BUY NOW</button>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

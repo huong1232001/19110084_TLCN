@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="register-page">
+      <button id="register-close-button" onclick="goBack()">X</button>
+      <div id="title-register">
+        <h2>REGISTER</h2>
+      </div>
+      <div id="register-container">
+        <div id="register-username-container">
+          <label for="register-username-title">User name:</label>
+          <input
+            type="text"
+            id="register-username"
+            placeholder="Enter your username"
+          />
+        </div>
+        <div id="register-email-container">
+          <label for="register-email-title">Email:</label>
+          <input
+            type="email"
+            id="register-email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div id="register-password-container">
+          <label for="register-password-title">Password:</label>
+          <input
+            type="password"
+            id="register-password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <p>Already have an account? <a href="login.html">Log In</a></p>
+        <div id="register-button-container">
+          <button id="register-button">Register</button>
+          <button id="register-cancel-button" onclick="goHome()">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function goBack() {
+        window.history.back(); // Quay lại trang trước đó
+      }
+
+      function goHome() {
+        window.location.href = "index.html"; // Thay 'index.html' bằng URL của trang chính
+      }
+    </script>
+  </body>
+</html>

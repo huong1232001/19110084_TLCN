@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="login-page">
+      <button id="login-close-button" onclick="goBack()">X</button>
+      <div id="title-login">
+        <h2>LOG IN</h2>
+      </div>
+      <div id="login-container">
+        <div id="login-username-container">
+          <label for="login-username-title">User name:</label>
+          <input
+            type="text"
+            id="login-username"
+            placeholder="Enter your username"
+          />
+        </div>
+        <div id="login-password-container">
+          <label for="login-password">Password:</label>
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <div id="register-info">
+          <p>
+            Do you have an account?
+            <a href="http://localhost:3000/register.html">Register</a>
+          </p>
+        </div>
+        <div id="login-button-container">
+          <button id="login-button">Login</button>
+          <button id="login-cancel-button" onclick="goHome()">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function goBack() {
+        window.history.back(); // Quay lại trang trước đó
+      }
+      function goHome() {
+        window.location.href = "index.html"; // Thay 'index.html' bằng URL của trang chính
+      }
+    </script>
+  </body>
+</html>

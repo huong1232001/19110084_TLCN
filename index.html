@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <a href="" class="logo">
+          <img src="picture/home/logo.png" alt="" />
+        </a>
+        <div id="menu">
+          <div class="item">
+            <a href="http://localhost:3000/">HOME</a>
+          </div>
+          <div class="item">
+            <a href="http://localhost:3000/about.html">ABOUT US</a>
+          </div>
+          <div class="item">
+            <a href="http://localhost:3000/product.html">PRODUCT</a>
+            <div class="dropdown">
+              <ul>
+                <li class="dropdown-item-shirt"><a href="#">Shirt</a>
+                  <div class="sub-list-shirt">
+                    <ul>
+                      <li><a href="#">T-shirt</a></li>
+                      <li><a href="#">Style shirt</a></li>
+                      <li><a href="#">Croptop</a></li>
+                      <li><a href="#">Polo shirt</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown-item-trousers"><a href="#">Trousers</a>
+                  <div class="sub-list-trousers">
+                    <ul>
+                      <li><a href="#">Pants</a></li>
+                      <li><a href="#">Jeans</a></li>
+                      <li><a href="#">Shorts</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown-item-skirt"><a href="#">Skirt</a>
+                  <div class="sub-list-skirt">
+                    <ul>
+                      <li><a href="#">Short skirt</a></li>
+                      <li><a href="#">Midi skirt</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown-item-dress"><a href="#">Dress</a>
+                  <div class="sub-list-dress">
+                    <ul>
+                      <li><a href="#">Short Dress</a></li>
+                      <li><a href="#">Maxi Dress</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown-item-jacket"><a href="#">Jacket</a>
+                  <div class="sub-list-jacket">
+                    <ul>
+                      <li><a href="#">Zipper Jacket</a></li>
+                      <li><a href="#">Sweater</a></li>
+                      <li><a href="#">Cardigan</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <a href="http://localhost:3000/contact.html">CONTACT</a>
+          </div>
+        </div>
+        <div id="actions">
+          <div class="user">
+            <a href="http://localhost:3000/login.html">
+              <img src="picture/home/user.png" alt="User" />
+            </a>
+          </div>
+          <div class="cart">
+            <a href="http://localhost:3000/cart.html">
+              <img src="picture/home/cart.png" alt="Cart" />
+            </a>
+            <div id="cart-count" class="cart-count">0</div>
+          </div>
+        </div>
+      </div>
+      <div id="banner">
+        <div class="beautiful-background"></div>
+        <div class="box-center">
+          <h2>
+            <span>SWEET GIRL</span>
+          </h2>
+          <p>
+            Sweet Girl's designs are highly personalised and incorporate expert
+            tailoring techniques.<br />What's more, the products are made from
+            natural fibres and are biodegradable.
+          </p>
+            <button>
+              <span>BUY NOW</span>
+            </button>
+          </div>
+        </div>
+        <div class="to-bottom"></div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

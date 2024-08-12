@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header-product">
+        <a href="" class="logo">
+          <img src="picture/home/logo.png" alt="" />
+        </a>
+        <div id="menu">
+          <div class="item">
+            <a href="http://localhost:3000/">HOME</a>
+          </div>
+          <div class="item">
+            <a href="http://localhost:3000/about.html">ABOUT US</a>
+          </div>
+          <div class="item">
+            <a href="http://localhost:3000/product.html">PRODUCT</a>
+            <div class="dropdown">
+              <ul>
+                <li class="dropdown-item-shirt">
+                  <a href="#">Shirt</a>
+                  <div class="sub-list-shirt">
+                    <ul>
+                      <li><a href="#">T-shirt</a></li>
+                      <li><a href="#">Style shirt</a></li>
+                      <li><a href="#">Croptop</a></li>
+                      <li><a href="#">Polo shirt</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown-item-trousers">
+                  <a href="#">Trousers</a>
+                  <div class="sub-list-trousers">
+                    <ul>
+                      <li><a href="#">Pants</a></li>
+                      <li><a href="#">Jeans</a></li>
+                      <li><a href="#">Shorts</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown-item-skirt">
+                  <a href="#">Skirt</a>
+                  <div class="sub-list-skirt">
+                    <ul>
+                      <li><a href="#">Short skirt</a></li>
+                      <li><a href="#">Midi skirt</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown-item-dress">
+                  <a href="#">Dress</a>
+                  <div class="sub-list-dress">
+                    <ul>
+                      <li><a href="#">Short Dress</a></li>
+                      <li><a href="#">Maxi Dress</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown-item-jacket">
+                  <a href="#">Jacket</a>
+                  <div class="sub-list-jacket">
+                    <ul>
+                      <li><a href="#">Zipper Jacket</a></li>
+                      <li><a href="#">Sweater</a></li>
+                      <li><a href="#">Cardigan</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <a href="http://localhost:3000/contact.html">CONTACT</a>
+          </div>
+        </div>
+        <div id="actions">
+          <div class="user">
+            <a href="http://localhost:3000/login.html">
+              <img src="picture/home/user.png" alt="User" />
+            </a>
+          </div>
+          <div class="cart">
+            <a href="http://localhost:3000/cart.html">
+              <img src="picture/home/cart.png" alt="Cart" />
+            </a>
+            <div id="cart-count" class="cart-count">0</div>
+          </div>
+        </div>
+      </div>
+      <div id="filter-product">
+        <a href="" class="icon-filter">
+          <img src="./picture/product/icon-filter.png" alt="User" />
+        </a>
+        <a href="" class="title-filter">
+          <label>PRODUCT SEARCH FILTER</label>
+        </a>
+      </div>
+      <div id="search-product">
+        <input type="text" id="login-box" placeholder="Search products..." />
+        <button type="button">Search</button>
+      </div>
+      <div id="product-section">
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="./picture/product/product1.png" alt="Product 1" />
+              <div class="overlay">
+                <img src="./picture/home/cart.png" alt="add-to-cart" />
+                <button class="add-to-cart-button" type="button">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="product-discription">
+              <p class="product-type">T-shirt</p>
+              <p class="product-information">
+                Short Sleeve T-shirt with letters and bow Sweet Girl - Wise Tee
+              </p>
+              <p class="product-price">$265.0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="page-buttons">
+          <button id="first-page-button" class="navigation-button">
+            « First
+          </button>
+          <button id="prev-button">Previous</button>
+          <!-- Các nút trang sẽ được thêm ở đây -->
+          <button id="next-button">Next</button>
+          <button id="last-page-button" class="navigation-button">
+            Last »
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Phần tử modal -->
+    <div id="iframe-modal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <span id="iframe-close" class="close">&times;</span>
+        <iframe
+          src="addcart.html"
+          width="800px"
+          height="600px"
+          scrolling="no"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
